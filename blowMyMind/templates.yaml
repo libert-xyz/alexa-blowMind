@@ -1,0 +1,12 @@
+quote: |
+
+  <speak>
+  , {{q}} <break time="1s"/>
+    Do you want to here more?
+  </speak>
+
+quote_tts: |
+          , {{q}}
+
+
+help: Welcome to blow my mind. I can keep you thinking all day long, do you want to hear a phrase?

@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "app_function": "skill.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "mindBlow",
+        "runtime": "python2.7",
+        "s3_bucket": "alexa-tweetinfo",
+        "apigateway_description" : "Mind Blow",
+        "lambda_description" : "Mind Blow"
+    }
+}
