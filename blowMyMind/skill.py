@@ -19,7 +19,6 @@ logo = 'https://s3.amazonaws.com/itron-skill/visuals/BrainWithFusePNG-300x184.pn
 @ask.launch
 def launch():
     #Return a list
-
     #LIST
     session.attributes['facts'] = blow
 
@@ -29,6 +28,11 @@ def launch():
 
     #Remove the item
     session.attributes['facts'].remove(session.attributes['facts'][random_quote])
+
+
+    #Repeat
+    session.attributes['repeat']  = fact
+    session.attributes['repeat_tts'] = fact_tts
 
     return question(fact) \
     .standard_card(title='Blow my mind',
@@ -52,6 +56,10 @@ def yes_intent():
     #Remove the item
     session.attributes['facts'].remove(session.attributes['facts'][random_quote])
 
+    #Repeat
+    session.attributes['repeat']  = fact
+    session.attributes['repeat_tts'] = fact_tts
+
     return question(fact) \
     .standard_card(title='Blow my mind',
     text=fact_tts,
@@ -68,6 +76,14 @@ def no_intent():
 @ask.intent('StopIntent')
 def stop_intent():
     return statement('')
+
+@ask.intent('AMAZON.RepeatIntent')
+def repeat():
+
+    return question(session.attributes.get('repeat')) \
+            .standard_card(title='Blow my mind',
+            text=session.attributes.get('repeat_tts'),
+            small_image_url=logo)
 
 
 @ask.intent('HelpIntent')

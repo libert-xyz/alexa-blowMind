@@ -2,7 +2,6 @@
 blow = ['Outer space is only an hours drive away. if your car could drive straight up.',
         'We built an atomic bomb twenty years before we had color television.',
         'North Korea and Finland are only separated by one country. Russia',
-        'You can make a human being, a real living person, completely by accident.',
         'You have never seen your face, only pictures and reflections.',
         'If you shuffle a pack of cards properly, chances are that exact order has never been seen before in the whole history of the universe.',
         'If a man has no children, he will be the first man in a long line of men in his bloodline not to have a child',
@@ -19,8 +18,9 @@ blow = ['Outer space is only an hours drive away. if your car could drive straig
         'Most of the dust underneath your bed is your own dead skin.',
         'The human brain is the most complex thing in the Universe known to man, according to the human brain',
         'Almost every element in your body was made in an exploding star',
-        '1998 is as far away as 2030',
         'The United States has not even made it into the Top 50 list of longest lasting empires',
         'The order of the alphabet is completely random.',
         'Aliens invaded the moon on July 20th, 1969',
-        '100 years from now, Facebook is gonna be full of dead people.']
+        '100 years from now, Facebook is gonna be full of dead people.',
+        'Every two minutes, we take more pictures than all of humanity did in the 19th century.',
+        'There is only one hole in a straw.']
